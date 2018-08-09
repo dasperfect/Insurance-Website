@@ -1,0 +1,89 @@
+$bg-color: #008ed6 ;
+$font-color: #fff;
+$primary-color: #008ed6;
+$dark-overlay: rgba(0,0,0,0.7);
+$icon-size: 30px;
+
+
+body {
+  background: $bg-color;
+  color: $font-color;
+}
+
+.navbar {
+  border-bottom: $primary-color 3px solid;
+  opacity: 0.8;
+}
+
+#home-section {
+  background: url('../img/bg.jpg') no-repeat;
+  min-height: 635px;
+  background-size: cover;
+  background-attachment: fixed;
+
+  .dark-overlay {
+    background-color: $dark-overlay;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 600;
+  }
+  
+  .home-inner {
+    padding-top: 150px;
+  }
+  
+  .card-form {
+    opacity: 0.8;
+
+    &:hover {
+     opacity: 1;
+    }
+  }
+
+  .fa {
+    color: $primary-color;
+    background: #fff;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: $icon-size;
+  }
+}
+
+#product-section {
+  .fa {
+    color: #fff;
+    background: $primary-color;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: $icon-size;
+  }
+}
+
+#support-section {
+  background-color: #fff;
+  color: $dark-overlay;
+
+  .fa {
+    color: #fff;
+    background: $primary-color;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: $icon-size;
+  }
+}
+
+#contact-section {
+  background: url('../img/contact1.jpg') no-repeat;
+  min-height: 435px;
+  background-size: cover;
+  color: #000;
+}
+
+.modal-notify .modal-header {
+  border-radius: 3px 3px 0 0;
+}
+.modal-notify .modal-content {
+  border-radius: 3px;
+}
